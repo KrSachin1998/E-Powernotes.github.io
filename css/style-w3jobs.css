@@ -1,0 +1,193 @@
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #2f315e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+
+  /*=========
+    styling the textboxes in middle starts..
+  ==========*/
+.jumbotron .job-search-row{
+    display: inline-block;
+}
+
+.jumbotron .form-group{
+    display: inline-block;
+}
+
+.jumbotron .help-text{
+    font-size: 11px;
+    position: absolute;
+    left: 163px;
+}
+
+.jumbotron .btn{
+  background-color: #e74c3c;
+  color:white;
+  border:none;
+}
+
+  /*=========
+    styling the textboxes in middle ends..
+  ==========*/
+
+  /*==========
+    styling the comapnies,jobs,featured jobs starts..
+  ==========*/
+.company-list h4{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.company-list a{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#jobs{
+  padding-top:60px;
+}
+
+.jobs-bind .job-data h4{
+    margin:0;
+    padding:0;
+}
+
+.jobs-bind .job-data .jobs{
+    border-bottom: 1px solid #e6e6e6;
+    color:black;
+}
+
+.jobs-bind .jobs .label{
+    color:hsl(0, 0%, 15%);
+}
+
+.recent-jobs h4{
+    margin:0;
+    padding:0;
+    text-align:left;
+    padding-bottom: 12px;
+}
+
+.recent-jobs a{
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+    color: black;
+    padding-bottom: 16px;
+    text-decoration: none;
+    line-height: 14px;
+}
+
+.recent-jobs a:hover{
+    color:#1A0DAB;
+}
+
+    /*==========
+    styling the comapnies,jobs,featured jobs starts..
+  ==========*/
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2f315e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    background-color: #E74C3C !important;
+    cursor:pointer;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+
+  .footer{
+    color: black;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }

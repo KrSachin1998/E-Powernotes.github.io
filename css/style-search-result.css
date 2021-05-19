@@ -1,0 +1,658 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+/*==================
+        styling password change box starts..
+================*/
+.popup-box h2{
+  display: inline;
+  color:black;
+}
+.popup-box{
+  display: none;
+  position: fixed;
+  top:25%;
+  left:38%;
+  background-color: #fdfdfd;
+  padding: 29px;
+  border-radius: 18px;
+  border:2px solid #c1c1c1;
+  z-index:3;
+}
+.popup-box input{
+  margin-bottom: 10px;
+  width:100%;
+  border-radius: 17px;
+}
+.popup-box .btn-here{
+  padding-top: 25px;
+  margin-left: 40px;
+}
+.popup-box .btn{
+  background-color: #15156f;
+  color:white;
+  border-radius: 17px;
+  width:80px;
+}
+
+/*==================
+      styling password change box endss..
+================*/
+
+
+/*=========== login modal starts ===========*/
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index:2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    color:black;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/*==== new design starts ====*/
+.modal-header{
+  background-color: white;
+  color:black;
+  border:none;
+  font-size:20px;
+  padding:6px;
+  border-radius: 7px;
+}
+
+.modal .modal-body h5{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.modal-header h3{
+  font-size: 29px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-color: #e74c3c;
+  margin-top: 10px;
+}
+
+.userEmail { position: relative; }
+.userEmail input { text-indent: 30px;}
+.userEmail .userIcon {
+  position: absolute;
+  top: 12px;
+  left: 74px;
+  font-size: 20px;
+  color: #e74c3c;
+}
+.modal .modal-content .form-control{
+  border-radius: 20px;
+  width:70%;
+  margin-left:60px;
+  height:43px;
+}
+.modal .modal-content .row{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.modal .modal-content .row #btnLogin{
+  width:70%;
+  margin-left:60px;
+  height:41px;
+  border-radius: 20px;
+  background-color: #E74C3C;
+  color:white;
+  font-weight: bold;
+}
+.modal .modal-body .forgorPass{
+  margin-left:20px;
+}
+.modal .modal-content .login-with-other{
+  margin: 0;
+  padding: 0;
+  padding-right:30px;
+  text-align: right;
+}
+.modal .modal-content .login-with-other .help-text{
+  display: inline;
+  margin-right:100px;
+  color:#828282;
+}
+.modal .modal-content .login-with-other .fa-facebook{
+  background-color: #3e3ea5;
+  font-size: 20px;
+  padding: 12px 14px 6px 15px;
+  border-radius: 20px;
+  color:white;
+  cursor: pointer;
+}
+.modal .modal-content .login-with-other .fa-google-plus{
+  background-color: #dc1602;
+  font-size: 20px;
+  padding: 11px 7px 7px 7px;
+  border-radius: 20px;
+  color:white;
+  cursor: pointer;
+}
+.modal .modal-content .new-signup{
+  text-align:center;
+}
+hr{
+  background-color: #c1c1c1 !important;
+  color: #c1c1c1 !important;
+  border: solid 0.5px #c1c1c1 !important;
+ /* height: 1px !important;*/
+  margin: 0;
+}
+/*==== new design ends ====*/
+
+.alert{
+    padding:0;
+}
+.login-form input{
+    width:100%;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: rgb(124, 124, 124);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+#myModal .modal-body .alert{
+    padding:5px;
+}
+.alert-dismissable .close, .alert-dismissible .close{
+    top:0;
+    right:0;
+}
+/*======
+    making the modal responsive..
+=======*/
+
+@media only screen and (max-width:1068px){
+  .modal-content{
+    width:37%;
+  }
+}
+@media only screen and (max-width:808px){
+  .modal-content{
+    width:44%;
+  }
+}
+@media only screen and (max-width:705px){
+  .modal-content{
+    width:57%;
+  }
+}
+@media only screen and (max-width:590px){
+  .modal-content{
+    width:80%;
+  }
+}
+@media only screen and (max-width:470px){
+  .modal-content{
+    width:90%;
+  }
+}
+
+/*======
+    making the modal responsive ends..
+=======*/
+
+/*============= login modal ends ==============*/
+
+/*======= small table starts ========*/
+
+/*====== new download popup starts =======*/
+
+/* code added by vivek kr sahu */
+
+.shownotesfiles{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%; 
+  top: 10;  
+  background-color: #1616168f;
+  z-index:2;
+}
+.modalbox{
+  background: #fff;
+    width: 85%;
+    height: 500px;
+    margin: 20px;
+    left: 5%;
+    border-radius: 15px;
+}
+.modalpreviewpart{
+  width: 50%;
+  float: left; 
+  /* margin: 10px; */
+  margin-left: 1px;
+  margin-right: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*==code ends here==========*/
+
+/* width */
+.slidercontainer .pdfscroll::-webkit-scrollbar {
+  width: 8px;
+  
+}
+
+/* Track */
+.slidercontainer .pdfscroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+.slidercontainer .pdfscroll::-webkit-scrollbar-thumb {
+  background: #151b59; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.slidercontainer .pdfscroll::-webkit-scrollbar-thumb:hover {
+  background: #d95338; 
+}
+
+/*.shownotesfiles .get-notes-files{
+  max-height: 450px;
+ overflow: auto;
+ 
+}*/
+.shownotesfiles .downloadNotesDetails
+{
+  margin-left:25px;
+}
+
+.shownotesfiles .show-box{
+  width:100%;
+  height:475px;
+  /*border:1px solid black;*/
+}
+
+.shownotesfiles .closeDownPopup{
+  float:right;
+  font-size:40px;
+  cursor:pointer;
+} 
+
+
+
+.shownotesfiles #getDownloadNotes{
+  padding-top:50px;
+  color:black;
+  padding-left:50px;
+  
+}
+#getDownloadNotes .downloadNotesTitle 
+{
+  text-transform: capitalize;
+}
+.shownotesfiles #getDownloadNotes h4{
+  color:#32336b;
+  font-weight: bold;
+}
+
+.shownotesfiles #getDownloadNotes img{
+  width:60px;
+  height:60px;
+}
+
+.shownotesfiles #getDownloadNotes .userNameForDownload{
+  font-weight: bold;
+  margin-left:10px;
+  text-transform: capitalize;
+}
+.dwnbntstyle{
+  text-align: center;
+}
+.modaldespart{
+  width: 48%; 
+  float: left;
+  
+ 
+}
+.shownotesfiles #downloadNotes{
+  
+    margin-top: 85px;
+    margin-left: auto;
+    width: 149px;
+    height: 44px;
+    font-size: 19px;
+    background-color: #151b59;
+    color: white;
+    border-radius: 23px;
+}
+
+.shownotesfiles .downloadReport{
+  margin-top:10px;
+  font-weight:bold;
+  /*margin-left:30%;*/
+  color:#b1b1b1;
+}
+
+.shownotesfiles .downloadReport .downloadReportLink{
+  color:#e74c3c;
+}
+
+/*====== making the download popup responsive starts =======*/
+@media only screen and (max-width:1179px){
+  .modalbox{
+    width:79%;
+  }
+  .modalbox .col-sm-6{
+    width:47%;
+  }
+}
+
+@media only screen and (max-width:620px){
+  .modalbox{
+    left:0;
+    width:90%;
+    padding:0;
+    height:567px;
+  }
+
+  .slidercontainer{
+    height:154px;
+  }
+
+  .slidercontainer .page{
+    height:200px;
+    width:100%;
+    margin-top:-34px;
+  }
+
+  .modalbox #pagination-data{
+    margin-left: 0px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .modalbox .col-sm-6{
+    width:100%;
+  }
+
+  .dwnbntstyle{
+    text-align: center;
+    padding: 0;
+    margin-top: -63px;
+  }
+
+  .shownotesfiles #getDownloadNotes{
+    padding-top:0;
+    padding-left:0;
+    margin-top:84px;
+  }
+
+}
+
+
+/*========= making the download popup responsive ends ==========*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  left: 0px;
+  top: 19px;
+  width: 341%;
+  height:auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px 7px;
+  z-index: 1;
+}
+
+.dropdown-content .closeSmTable{
+  top:0px;
+  right:2px;
+  position: absolute;
+  color: rgb(75, 75, 75);
+  font-size: 28px;
+  font-weight: bold;
+  cursor:pointer;
+}
+.dropdown-content .closeSmTable:focus{
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.ddlSmallTable{
+  color:#1A0DAB;
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.ddlLinkList{
+  display: block;
+}
+
+/*======= small table ends =========*/
+
+
+/*===========
+  styling main notes binding section..
+==============*/
+#tblNotes{
+  border-collapse:separate; 
+  border-spacing:0 8px;
+}
+#tblNotes tr td{
+  padding-left:5px;
+  box-shadow:0px 2px 6px 0px #888888;
+}
+.box-container-for-notes{
+  width: 100%;  
+  min-height: 150px;
+  padding:5px;
+  box-shadow:0px 2px 6px 0px #888888;
+  margin:5px;
+  
+}
+.box-desc{
+  margin: 5px;
+  line-height: 1.7;
+  
+}
+.box-next-line{
+  margin:3px
+}
+.box-notes-details{
+  margin:3px;
+  line-height: 1.8;
+}
+.label-default{
+  background-color:#e4e2e2;  
+  color:black;
+  padding:3px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+#showDate{
+  padding:3px;
+  margin-bottom: 2px;
+}
+
+h4:first-letter {
+  text-transform: capitalize;
+ }
+
+.notes-box{
+  position: absolute;
+  top: 65px;
+  left: 7.5%;
+  width: 89%;
+  padding-bottom:93px;
+}
+.notes-box .notes-details h6 {
+  display: inline;
+  padding-right:8px;
+}
+
+.logoutbutton{
+  background: transparent;
+  border:none;
+  font-size: 14px;
+}
+
+.notes-box #tblNotes .notes-details{
+  padding-bottom: 6px;
+}
+.notes-box #tblNotes .icon-left{
+  color:#a5a5a5;
+  padding-right:3px;
+  cursor:pointer;
+}
+
+.icon-left{  
+  color:#1a0dab;
+  padding-right:3px;
+  cursor:pointer;
+}
+.icon-right{
+  color:#a5a5a5;
+  padding-right:3px;
+  cursor:pointer;
+}
+
+.notes-box #tblNotes .icon-right{
+  font-size: 20px;
+  padding-right: 10px;
+  color:#a5a5a5;
+  float: right;
+  cursor: pointer;
+}
+
+/*======== making the notes binding responsive starts =========*/
+
+@media only screen and (max-width:1074px){
+  .notes-box{
+    left:4%;
+  }
+}
+
+@media only screen and (max-width:1025px){
+  .notes-box{
+    left:3%;
+    width:95%;
+  }
+}
+
+@media only screen and (max-width:950px){
+  .notes-box{
+    left:2%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width:430px){
+  .notes-box{
+    left:0;
+    width:100%;
+  }
+}
+/* code for slider */
+/* Next & previous buttons */
+.slidercontainer{
+position: relative;
+/*height:450px;*/
+}
+.page {
+  display: none;
+  height:420px;
+}
+.page-active {
+  display: block;
+}
+#pagination-data{
+  margin-left:12%;
+}
+
+/*======== making the notes binding responsive ends =========*/
+
+
+/*=========
+  making the forget password responsive starts..
+=========*/
+@media only screen and (max-width:1080px){
+  .popup-box{
+    left:35%;
+  }
+}
+
+@media only screen and (max-width:635px){
+  .popup-box{
+    left:27%;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .popup-box{
+    left:18%;
+  }
+}
+
+@media only screen and (max-width:420px){
+  .popup-box{
+    left:5%;
+  }
+}
+
+/*=========
+  making the forget password responsive starts..
+=========*/

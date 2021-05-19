@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.header {
+    background-color: #4a245e;
+    color: #ffffff;
+    padding: 25px;
+}
+.header .heading-box h2{
+    font-weight: bold;
+    display: inline;
+}
+.header .heading-box .social-media-icons{
+    float: right;
+}
+.header .heading-box .social-media-icons .media-icon{
+    font-size:25px;
+    padding:8px;
+}
+.header .heading-box .social-media-icons .fa{
+    color:white;
+}
+.header .heading-box .social-media-icons .fa-facebook:hover{
+    transition: 1s;
+    color:blue;
+    background-color: #ffffff;
+}
+.header .heading-box .social-media-icons .fa-youtube:hover{
+    transition: 1s;
+    color:rgb(224, 16, 16);
+    background-color: #ffffff;
+}
+.header .heading-box .social-media-icons .fa-twitter:hover{
+    transition: 1s;
+    color:rgb(45, 118, 202);
+    background-color: white;
+}
+.header .heading-box .social-media-icons .fa-instagram:hover{
+    transition: 1s;
+    color:rgb(241, 46, 12);
+    background-color: white;
+}
+/*======styling for header ends========*/
+
+hr{
+    background-color: rgb(151, 151, 151);
+    color: rgb(151, 151, 151);
+    border: solid 1px rgb(151, 151, 151);
+    height: 0.8px;
+    width: 100%;
+}
+.alert{
+    margin-bottom:5px;
+}
+
+/*======styling for login-form starts========*/
+.login-form .heading-login{
+    font-weight:bold;
+}
+.login-form .heading-login .fa{
+    color: #f26649;
+}
+.login-form #btnLogin{
+    color:white;
+    background-color: #4a245e;
+}
+.login-form #btnLogin:hover{
+    transition: 0.3s;
+    background-color: #f26649;
+}
+.new-registration h2{
+    font-weight: bold;
+}
+.new-registration .fa{
+    color: #f26649;
+}
+.container-info #btnCreateAnAccount{
+    color:white;
+    background-color: #4a245e;
+}
+.container-info #btnCreateAnAccount:hover{
+    transition: 0.3s;
+    background-color: #f26649;
+}
+/*======styling for login-form starts========*/
+
+/*======styling for footer starts========*/
+.footer{
+    background-color: #4a245e;
+    color:white;
+    font-weight:bold;
+}
+.footer a{
+    text-decoration: none;
+    color:#f26649;
+}
+.footer h4{
+    font-weight: bold;
+}
+.footer .vscom-badge{
+    font-size: 30px;
+}
+.footer a:hover{
+    color:#f09482;
+    text-decoration: underline;
+    transition: 1s;
+}
+/*======styling for footer footer========*/

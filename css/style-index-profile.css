@@ -1,0 +1,194 @@
+#main {
+    margin-left:137px;
+    position: absolute;
+    top: 59px;
+    width:84%;
+    z-index:-1;
+  }
+  #main h4,h1{
+      font-weight: bold;
+      margin-left: 10px;
+  }
+
+  #main .col-sm-4{
+      padding:0;
+  }
+
+  .form-horizontal .row{
+      padding-top:15px;
+  }
+
+  @media only screen and (max-width:618px){
+     #main {
+         margin-left:0;
+     }
+  }
+
+  #main .row .imgBox #imgUser{
+    width:270px;
+    height:210px;
+  }
+
+  #main .row .btnBox{
+    padding-top:30px
+}
+
+#main .row .btnBox #btnDelete,#btnChange{
+    margin:3px;
+}
+
+#main #btnSaveUserData,#main #btnChangePassword{
+    background-color: #f26649;
+    margin-left: 43px;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 64%;
+    border-radius: 21px;
+}
+#main #btnSaveUserData:hover{
+    transition: 0.2s;
+    background-color: #d33d1f;
+}
+#main #btnResetUserData:hover{
+    transition: 0.2s;
+    background-color: #d33d1f;
+}
+#main .form-control{
+    width:100%;
+}
+
+
+#main .userEmail { position: relative; }
+#main .userEmail input { text-indent: 30px;}
+#main .userEmail .userIcon {
+    position: absolute;
+    top: 7px;
+    left: 64px;
+    font-size: 20px;
+    color: #e74c3c;
+}
+#main .userEmail .form-control{
+    border-radius: 20px;
+    width:90%;
+    margin-left:60px;
+    height:41px;
+    padding-left:29px;
+    -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 7px #ccc;
+}
+
+#main .userEmail #txtUserName{
+    padding-left:5px;
+}
+
+#main .userEmail #txtUserEmail{
+    padding-left:5px;
+}
+
+#main .userEmail #txtUserMobileNo{
+    padding-left:5px;
+}
+
+/*==============
+    styling forget password change starts..
+=================*/
+#myModal .passwordChangeRow #txtOldPassword,
+#myModal .passwordChangeRow #txtNewPassword,
+#myModal .passwordChangeRow #txtConfirmPassword{
+    border-radius: 20px;
+    width: 90%;
+    height: 41px;
+    margin-left:27px;
+    margin-top:14px;
+    padding-left: 29px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 7px #ccc;
+}
+/*==============
+    styling forget password change ends..
+=================*/
+
+/*========= making the profile section responsive starts =========*/
+@media only screen and (max-width:1118px){
+    #main{
+        margin-left:100px;
+    }
+}
+
+@media only screen and (max-width:1060px){
+    #main{
+        width:85%;
+        margin-left: 100px;
+    }
+    #main .row .imgBox #imgUser{
+        width:240px;
+        height:190px;
+      }
+}
+
+@media only screen and (max-width:990px){
+    #main{
+        width:85%;
+        margin-left: 100px;
+    }
+    #main .row .imgBox #imgUser{
+        width:230px;
+        height:180px;
+      }
+}
+
+@media only screen and (max-width:902px){
+    #main{
+        width:82%;
+        margin-left: 100px;
+    }
+    #main .row .imgBox #imgUser{
+        width:220px;
+        height:170px;
+      }
+}
+
+@media only screen and (max-width:767px){
+    #main{
+        width:82%;
+    }
+    #main .row .imgBox #imgUser{
+        margin-left: 20px;
+        width:220px;
+        height:180px;
+      }
+    #main .userEmail{
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:618px){
+    #main{
+        top:75px;
+        width:100%;
+        margin-left: -20px;
+        padding-bottom: 88px;
+    }
+    #main .row .imgBox #imgUser{
+        margin-left: 20px;
+        width:220px;
+        height:180px;
+      }
+      #main .row .btnBox{
+          padding:13px;
+      } 
+}
+
+@media only screen and (max-width:420px){
+    #main{
+        top:75px;
+        width:90%;
+    }
+}
+
+/*========= making the profile section responsive ends =========*/
+
+

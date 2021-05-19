@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+}
+.header {
+    background-color: #151a59;
+    color: #ffffff;
+    padding:16px;
+}
+.header .heading-box h4{
+    display: inline;
+}
+
+@media only screen and (max-width:400px){
+    .header{
+        padding:13px;
+    }
+    .header .container{
+        padding:0;
+    }
+}
+
+   
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    background-color: #e4e4e4;
+    height: 100%;
+    overflow: auto;
+  }
+  .sidebar .sidebar-content{
+      margin-top:74%;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-weight:bold;
+    transition: 0.3s;
+  }
+   
+  .sidebar a:hover {
+    background-color: #d33d1f;
+    color: white;
+  }
+  
+  @media screen and (max-width: 816px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  .content .register-form h2{
+    font-weight: 750;
+    font-size: 26px;
+    margin-left: 54px;
+    letter-spacing: -1;
+    margin-bottom: 0;
+  }
+
+  .content .upload-hr{
+    padding: 0;
+    margin: 0;
+    margin-left: 55px;
+    border: 0;
+    border-top: 5px solid #e74c3c;
+    width: 35px;
+}
+
+.content .about-hr{
+  padding: 0;
+  margin: 0;
+  margin-left: 11px;
+  border: 0;
+  border-top: 5px solid #e74c3c;
+  width: 35px;
+}
+
+
+
+  .content .register-form h5{
+      font-weight: bold;
+    margin-left:54px;
+  }
+.content .register-form .fa{
+    color:#e74c3c;
+}
+.register-form{
+    margin-left:0px;
+    margin-top: 65px;
+    margin-left: 53px;
+}
+
+.aboutus-container{
+  text-align: justify;
+  margin-left:7px;
+}
+
+.content .aboutus-container .headingCenter{
+  margin-left:12px;
+}
+
+
+.content .aboutus-container p{
+  color:black;
+  font-size:19px;
+  line-height: 1.8;
+}
+
+#btnRegister,#btnSendEmail{
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 61px;
+    width: 100%;
+    border-radius: 18px;
+    margin-top: 20px;
+}
+#btnRegister:hover{
+      transition: 0.3s;
+    background-color: #e74c3c; 
+}
+
+/*--------- styling the textboxes start ----------*/
+.userEmail { position: relative; }
+.userEmail input { text-indent: 30px;}
+.userEmail .userIcon {
+    position: absolute;
+    top: 10px;
+    left: 74px;
+    font-size: 20px;
+    color: #e74c3c;
+}
+.userEmail .form-control{
+    border-radius: 20px;
+    width:100%;
+    margin-left:60px;
+    height:41px;
+    -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 7px #ccc;
+}
+
+.userEmail #ddlUserUniBoard,#ddlUserCollege{
+    padding-left:35px;
+}
+
+.row{
+    padding-top:7px;
+}
+
+.row .col-sm-4{
+    margin-left:5px;
+}
+
+.content .row .col-sm-12 #userMessage{    
+  margin-left:76px;
+  width:100%;
+  height:80px;
+  padding-left: 25px;
+}
+
+/*------------ styling the textboxes end ------------*/
+
+/*=============
+    making  the form responsive starts..
+==============*/
+@media only screen and (max-width:883px){
+    .register-form{
+        margin-left:-32px;
+        margin-top:0;
+    }
+
+    .aboutus-container{
+      margin-left:0;
+    }
+
+}
+
+@media only screen and (max-width:818px){
+    .sidebar .sidebar-content{
+        margin-top:0;
+    }
+}
+
+@media only screen and (max-width:765px){
+    .sidebar .sidebar-content{
+        margin-top:0;
+    }
+    .register-form{
+        margin-left:-45px;
+        margin-top:0;
+        width:85%;
+    }
+    .aboutus-container{
+      margin-left:0;
+    }
+}
+
+@media only screen and (max-width:430px){
+  .aboutus-container{
+    width:100%;
+  }
+}
+
+
+/*=============
+    making  the form responsive ends..
+==============*/
+
+.termsCondition #chkBoxTermsCondi{
+    margin-left:57px;
+}
+
+.termsCondition #headingTermsCon{
+    display: inline;
+    margin-left: 0px;
+}
+
+@media only screen and (max-width:420px){
+    .termsCondition #chkBoxTermsCondi{
+        margin-left:0px;
+    }
+    .termsCondition{
+        width: 100%;
+        margin-left: 60px;
+    }
+}
+
+/* The Modal (background) */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .modal-content-warsucc{
+    padding:8px;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #btnCloseModal,#btnCloseModal{
+    color:black;
+  }
+
+  #myModal .modelFail{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+  }
+
+  #myModal .modelSuccess{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #0d1035;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  /*===========
+    making the modal responsive starts..  
+============*/
+  @media only screen and (max-width:924px){
+    .modal-content{
+        width:80%;
+    }
+  }
+
+  @media only screen and (max-width:500px){
+    .modal-content{
+        width:90%;
+    }
+  }
+
+  /*===========
+    making the modal responsive starts..  
+============*/
+
+.contact-row-bottom{
+  position: absolute;
+  font-weight: bold;
+}
+
+.contact-row-bottom p{
+  margin-left:75px;
+}
+
+.contact-row-bottom i{
+  font-size:20px;
+  color: #d33d1f;
+}
+
+@media only screen and (max-width:850px){
+  .contact-row-bottom p{
+    margin-left:60px;
+  }
+}
+
+@media only screen and (max-width:420px){
+  .contact-row-bottom p{
+    margin-left:60px;
+  }
+}

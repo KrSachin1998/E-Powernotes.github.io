@@ -1,0 +1,761 @@
+  html{
+      height:100%;
+  }
+
+  body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    background-color: #E74C3C;
+  }  
+
+  body #backImage{
+      position: absolute;
+      height:550px;
+      width:450px;
+      top:15%;
+      right:0;
+  }
+  @media only screen and (max-width:500px){
+    body #backImage{
+        display: none;
+    }
+  }
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e74c3c;
+  }
+  
+  .topnav .topnav-right{
+  float:right;
+  }
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 6px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 11px;
+  }
+  
+  .topnav button{
+      border-radius: 17px;
+      background-color: #15156f;
+      color:white;
+      border:none;
+  }
+
+  .topnav button:focus{
+      color:white;
+  }
+
+  .topnav button:hover{
+    background-color: #15156f;
+    color:white;
+  }
+
+  /*========= topnav ends ==========*/
+
+.content {
+    padding: 0 18px;
+    opacity:0;
+    overflow: hidden;
+    background-color: #e4e4e4;
+    z-index: 1;
+    position: fixed;
+    top: 50px;
+    width: 20%;
+    right: 43px;
+    border-radius: 7px;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+.content .content-row .col-sm-6{
+    text-align:center;
+    font-weight: bold;
+}
+.content .content-row .col-sm-6 a{
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+}
+/*===========
+    making the content popup responsive starts..
+=============*/
+@media only screen and (max-width:1035px){
+    .content{
+        right:95px;
+       
+    }
+}
+
+@media only screen and (max-width:822px){
+    .content{
+        width:185px;
+    }
+}
+
+@media only screen and (max-width: 748px){
+    .content .content-row .col-sm-6 {
+        width: 38px;
+        right: 0;
+        width: 89px;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .topnav a{
+        padding:7px 0px 0px 0px;
+    }
+    .content{
+        right:47px; 
+    }
+}
+
+/*===========
+    making the content popup responsive ends..
+=============*/
+
+  .jumbotron {
+    background-color: transparent;
+    color: black;
+    padding: 60px 106px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top: 143px;
+  } 
+  .jumbotron .brand-heading{
+      color:#fff;
+      padding:0;
+      margin:0;
+  }
+  
+/*========= searchbar starts ===========*/
+
+.search_bar .buttonInside{
+    position:relative;
+    margin-bottom:10px;
+    top:60px;
+    left:28px;
+  }
+ .search_bar .buttonInside input{
+      height: 40px;
+      width: 100%;
+      padding-left: 10px;
+      border-radius: 20rem;
+      border: none;
+      outline: none;
+  }
+  
+  .search_bar .buttonInside button{
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      border: none;
+      height: 36px;
+      width: 80px;
+      border-radius: 0px 80px 80px 0px;
+      outline: none;
+      text-align: center;
+      font-weight: bold;
+      padding: 2px;
+      background: #15156f;
+  }
+  .search_bar .buttonInside button:hover{
+    cursor:pointer;
+  }
+  .search_bar .buttonInside .fcolor{
+  color:#fff;
+  font-size:1.8em;
+  }
+  /*====== searchbar ========*/
+   
+  /*=========== making the searchbar responsive starts ==============*/
+
+  @media only screen and (max-width:1200px){
+    .search_bar .buttonInside{
+        top:60px;
+        left:25px;
+      }
+  }
+  @media only screen and (max-width:1150px){
+    .search_bar .buttonInside{
+        width:120%;
+        top:60px;
+        left:20px;
+      }
+  }
+  @media only screen and (max-width:980px){
+    .search_bar .buttonInside{
+        width:140%;
+        top:60px;
+        left:-10%;
+      }
+  }
+  @media only screen and (max-width:826px){
+    .search_bar .buttonInside{
+        width:170%;
+        top:60px;
+        left:-30%;
+      }
+  }
+  @media only screen and (max-width:768px){
+    .search_bar .buttonInside{
+        width:100%;
+        top:60px;
+        left:6%;
+      }
+  }
+  @media only screen and (max-width:662px){
+    .search_bar .buttonInside{
+        width:120%;
+        top:60px;
+        left:0;
+      }
+  }
+  @media only screen and (max-width:544px){
+    .search_bar .buttonInside{
+        width:140%;
+        top:60px;
+        left:-10%;
+      }
+  }
+  @media only screen and (max-width:486px){
+    .search_bar .buttonInside{
+        width:160%;
+        top:60px;
+        left:-30%;
+      }
+  }
+  @media only screen and (max-width:450px){
+    .search_bar .buttonInside{
+        width:180%;
+        top:60px;
+        left:-30%;
+      }
+  }
+  @media only screen and (max-width:416px){
+    .search_bar .buttonInside{
+        width:95%;
+        top:60px;
+        left:8%;
+      }
+  }
+
+  /*=========== searchbar responsive ends ==============*/
+
+  .container-fluid{
+    padding: 60px 50px;
+  }
+
+  /*-----------modal-------------*/
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index:2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    color:black;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/*====== new design =======*/
+.modal-header{
+    background-color: white;
+    color:black;
+    border:none;
+    font-size:20px;
+    padding:6px;
+    border-radius: 7px;
+}
+
+.modal .modal-body h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.modal-header h3{
+    font-size: 29px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: #e74c3c;
+    margin-top: 10px;
+}
+.userEmail { position: relative; }
+.userEmail input { text-indent: 30px;}
+.userEmail .userIcon {
+    position: absolute;
+    top: 3px;
+    left: 71px;
+    font-size: 20px;
+    color: #e74c3c;
+}
+.modal .modal-content .form-control{
+    border-radius: 20px;
+    width:70%;
+    margin-left:60px;
+    height:43px;
+}
+.modal .modal-content .row{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.modal .modal-content .row #btnLogin{
+    width:70%;
+    margin-left:60px;
+    height:41px;
+    border-radius: 20px;
+    background-color: #E74C3C;
+    color:white;
+    font-weight: bold;
+}
+.modal .modal-body .forgorPass{
+    margin-left:20px;
+}
+.modal .modal-content .login-with-other{
+    margin: 0;
+    padding: 0;
+    padding-right:30px;
+    text-align: right;
+}
+.modal .modal-content .login-with-other .help-text{
+    display: inline;
+    margin-right:100px;
+    color:#828282;
+}
+.modal .modal-content .login-with-other .fa-facebook{
+    background-color: #3e3ea5;
+    font-size: 20px;
+    padding: 12px 14px 6px 15px;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;
+}
+.modal .modal-content .login-with-other .fa-google-plus{
+    background-color: #dc1602;
+    font-size: 20px;
+    padding: 11px 7px 7px 7px;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;
+}
+.modal .modal-content .new-signup{
+    text-align:center;
+}
+hr{
+    background-color: #c1c1c1 !important;
+    color: #c1c1c1 !important;
+    border: solid 0.5px #c1c1c1 !important;
+    height: 1px !important;
+}
+/*=== new styles ends====*/
+
+
+.alert{
+    padding:0;
+}
+.login-form input{
+    width:100%;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+  color: rgb(124, 124, 124);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+#myModal .modal-body .alert{
+    padding:5px;
+}
+.alert-dismissable .close, .alert-dismissible .close{
+    top:0;
+    right:0;
+}
+.modal-footer {
+  padding: 5px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+/*==================
+        styling password change box starts..
+================*/
+.popup-box h2{
+    display: inline;
+    color:black;
+}
+.popup-box{
+    display: none;
+    position: fixed;
+    top:25%;
+    left:38%;
+    background-color: #fdfdfd;
+    padding: 29px;
+    border-radius: 18px;
+    border:2px solid #c1c1c1;
+    z-index:3;
+}
+.popup-box input{
+    margin-bottom: 10px;
+    width:100%;
+    border-radius: 17px;
+}
+.popup-box .btn-here{
+    padding-top: 25px;
+    margin-left: 40px;
+}
+.popup-box .btn{
+    background-color: #15156f;
+    color:white;
+    border-radius: 17px;
+    width:80px;
+}
+
+/*==================
+        styling password change box endss..
+================*/
+
+/*=========
+  making the forget password responsive starts..
+=========*/
+@media only screen and (max-width:1080px){
+    .popup-box{
+      left:35%;
+    }
+  }
+  
+  @media only screen and (max-width:635px){
+    .popup-box{
+      left:27%;
+    }   
+  }
+  
+  @media only screen and (max-width:480px){
+    .popup-box{
+      left:18%;
+    }
+  }
+  
+  @media only screen and (max-width:420px){
+    .popup-box{
+      left:5%;
+    }
+  }
+  
+  /*=========
+    making the forget password responsive starts..
+  =========*/
+
+/*----------style What do we offer starts----------*/
+.gallery {
+    margin: 3px;    
+    width: 160px;
+    left:21%;
+    top:40px;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.gallery .desc {
+    margin-top: 8px;
+    padding: 6px;
+    border-radius: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #151a59;
+    cursor: pointer;
+  }
+
+  /*------------making what we do offer,main page responsive starts------------*/
+@media only screen and (max-width:1200px){
+    .gallery {
+        margin: 2px;    
+        left:18%;
+      }
+      .what-do-we-offer{
+        height:300px;
+    }
+    body #backImage{
+        position: absolute;        
+        z-index:-1;
+        height:100%
+    }
+    #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:38%;
+    }
+} 
+@media only screen and (max-width:982px){
+    .gallery {
+        margin: 0px;
+        padding:15px;
+        left:6%;  
+      }
+      body #backImage{
+        position: absolute;
+        width:100%;
+        z-index:-1;
+        height:100%
+    }
+    #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:42%;
+    }
+}  
+@media only screen and (max-width:768px){
+    .gallery {
+        margin: 0px;
+        padding:20px;   
+        float:left;
+        left:5%;
+      }
+      .jumbotron{
+          padding-bottom: 0px;
+      }
+      #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:48%;
+    }
+}    
+@media only screen and (max-width:737px){
+    .gallery {
+        margin: 0px;
+        padding:20px;   
+        float:left;        
+      }
+      #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:55%;
+    }
+} 
+@media only screen and (max-width:714px){
+    .gallery {
+        margin-left: 0px;
+        padding:20px;    
+        float:left;
+        left:3%;
+        
+      }
+      #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:62%;
+    }
+} 
+@media only screen and (max-width:684px){
+    .what-do-we-offer .container{
+        padding:20px;
+    }
+    .gallery {
+        margin-left: 20px;
+        padding:4px;   
+        float:left;
+        left:3%;
+        width:120px;
+      }
+      #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:68%;
+    }
+}   
+@media only screen and (max-width:618px){
+    .what-do-we-offer .container{
+        padding:10px;
+    }
+    .gallery {
+        margin-left: 20px;
+        padding:3px;   
+        float:left;
+        left:3%;
+        width:112px;
+      }
+      #myModal .modal-content{        /*---------making the modal responsive---------*/
+        width:88%;
+    }
+} 
+@media only screen and (max-width:568px){
+    .what-do-we-offer .container{
+        padding:20px;
+    }
+    .gallery {
+        margin-left: 10px;
+        padding:3px;   
+        float:left;
+        left:2%;
+        width:110px;
+      }
+}
+@media only screen and (max-width:539px){
+    .what-do-we-offer .container{
+        padding:20px;
+    }
+    .gallery {
+        margin-left: 10px;
+        padding:3px;   
+        float:left;
+        left:2%;
+        width:105px;
+      }
+}
+@media only screen and (max-width:512px){
+    .what-do-we-offer .container{
+        padding:20px;
+    }
+    .gallery {
+        margin-left: 8px;
+        padding:3px;   
+        float:left;
+        left:2%;
+        width:100px;
+      }
+}
+@media only screen and (max-width:490px){
+    .what-do-we-offer .container{
+        padding:5px;
+    }
+    .gallery {
+        margin-left: 8px;
+        padding:3px;   
+        float:left;
+        left:5%;
+        width:90px;
+      }
+      .gallery .desc{
+        font-size:7px;
+        text-align:left;
+        padding:3px 2px 2px 5px;
+    }
+}
+@media only screen and (max-width:415px){
+    .jumbotron{
+        padding:20px 5px;
+        margin-top:107px;
+    }
+    .what-do-we-offer .container{
+        padding:5px;
+        padding-left:31px;
+    }
+    .gallery {
+        margin-left: 5px;
+        padding:3px;   
+        float:left;
+        left:1%;
+        width:80px;
+    }
+    .gallery .desc{
+        font-size:6px;
+        text-align:left;
+        padding:3px 2px 2px 5px;
+    }
+}
+@media only screen and (max-width:380px){
+    .what-do-we-offer .container{
+        padding:5px;
+        padding-left:31px;
+    }
+    .gallery {
+        margin-left: 5px;
+        padding:3px;   
+        float:left;
+        left:10%;
+        width:50px;
+    }
+}
+/*----------footer starts----------*/
+footer{
+    position: absolute;
+    bottom:0;
+    padding:10px;
+    width:100%;
+    color:white;
+}
+footer h5{
+    display: inline;
+}
+footer .media-icon{
+    display: inline;
+    margin-left:33%;
+}
+footer .media-icon .fa{
+    font-size: 18px;
+    padding:10px;
+    cursor: pointer;
+} 
+@media only screen and (max-width:989px){ 
+    footer .media-icon{
+        display: inline;
+        margin-left:30%;
+    }
+}
+@media only screen and (max-width:790px){
+    footer .media-icon{
+        display: inline;
+        margin-left:23%;
+    }
+}
+@media only screen and (max-width:528px){
+    footer .media-icon{
+        display: inline;
+        margin-left:20%;
+    }
+}
+@media only screen and (max-width:380px){
+    footer h5{
+        display: inline;
+        font-size:10px;
+    }
+    footer .media-icon{
+        display: inline;
+        padding-left:0;
+        margin-left:45%;
+    }
+    footer .media-icon .fa{
+        display: inline;
+        padding-left:0;
+        font-size:10px;
+    }
+}
+
+
+

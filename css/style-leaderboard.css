@@ -1,0 +1,186 @@
+.leaderboard{
+    position: absolute;
+     left:110px;
+     top:62px;
+}
+
+.leaderboard #hrBelowHeading{
+    padding: 0;
+    margin: 0;
+    margin-top: -11px;
+    margin-left: 1px;
+    border: 0;
+    border-top: 5px solid #e74c3c;
+    width: 29px;
+}
+
+.leaderboard h3{
+    font-weight: bold;
+}
+
+.leaderboard table{
+    width:1206px;
+}
+
+#tblLeaderBoardBody #imgLeaderboardUser{
+    width:50px;
+    height:50px;
+}
+
+#tblLeaderBoardBody td:not(.tdUserImage){
+    padding-top:19px;
+} 
+
+#tblLeaderBoardBody td #giveCrown0{
+    position: absolute;
+    color: #ffcb32;
+    margin-top: -2px;
+    margin-left: -4px;
+    z-index: -1;
+}
+
+#tblLeaderBoardBody td #giveCrown1{
+    position: absolute;
+    color:#cacaca;
+    /* padding-bottom: 16px; */
+    margin-top: -2px;
+    margin-left: -4px;
+    z-index: -1;
+}
+
+#tblLeaderBoardBody td #giveCrown2{
+    position: absolute;
+    color: #d4a03e;
+    /* padding-bottom: 16px; */
+    margin-top: -2px;
+    margin-left: -4px;
+    z-index: -1;
+}
+
+.leaderboard .note-row{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.leaderboard .note-row h6{
+    color:#808080;
+}
+
+/*========== making the binding section responsive starts ===========*/
+@media only screen and (max-width:1268px){
+    .leaderboard table{
+        width:1150px;
+    }
+}
+
+@media only screen and (max-width:1219px){
+    .leaderboard table{
+        width:1080px;
+    }
+}
+
+@media only screen and (max-width:1154px){
+    .leaderboard table{
+        width:1000px;
+    }
+}
+
+@media only screen and (max-width:1082px){
+    .leaderboard table{
+        width:920px;
+    }
+}
+
+@media only screen and (max-width:1009px){
+    .leaderboard table{
+        width:845px;
+    }
+}
+
+@media only screen and (max-width:943px){
+    .leaderboard table{
+        width:765px;
+    }
+}
+
+@media only screen and (max-width:866px){
+    .leaderboard table{
+        width:666px;
+    }
+}
+
+@media only screen and (max-width:866px){
+    .leaderboard table{
+        width:666px;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .leaderboard table{
+        width:585px;
+    }
+}
+
+@media only screen and (max-width:719px){
+    .leaderboard table{
+        border:none;
+        width:538px;
+    }
+}
+
+@media only screen and (max-width:665px){
+    .leaderboard table{
+        border:none;
+        width:485px;
+    }
+}
+
+@media only screen and (max-width:618px){
+    .leaderboard{
+        left:0;
+        z-index:-1;
+        top:72px;
+    }
+    .leaderboard table{
+        border:none;
+        width:564px;
+    }
+}
+
+@media only screen and (max-width:581px){
+    .leaderboard table{
+        border:none;
+        width:500px;
+    }
+}
+
+@media only screen and (max-width:512px){
+    .leaderboard table{
+        border:none;
+        width:435px;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .leaderboard{
+        width:100%;
+    }
+    .leaderboard table{
+        border:none;
+        width:100%;
+    }
+
+    .leaderboard .note-row{
+        margin-bottom: 10px;
+        margin-left:2px;
+        width: 90%;
+        text-align: center;
+    }
+
+}
+ 
+
+/*========== making the binding section responsive ends ===========*/

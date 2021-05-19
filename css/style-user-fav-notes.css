@@ -1,0 +1,189 @@
+  /*======= small table starts ========*/
+  #tblFavNotes #tableAllNotes{
+    border-collapse:none;
+    border-spacing:0;
+    margin-bottom:0;
+    background-color: #f9f9f9;
+  }
+  
+  #tblFavNotes #tableAllNotes tr td{
+    padding-left:0px;
+    box-shadow:none;
+  }
+  
+  .dropdown-content .closeSmTable{
+    top:0px;
+    right:2px;
+    position: absolute;
+    color: rgb(75, 75, 75);
+    font-size: 28px; 
+    font-weight: bold;
+    cursor:pointer;
+  }
+  .dropdown-content .closeSmTable:focus{
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .ddlSmallTable{
+    color:#1A0DAB;
+    cursor: pointer;
+    padding-left: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: 0px;
+    top: 19px;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 7px;
+    z-index: 1;
+  }
+  .ddlLinkList{
+    display: block;
+  }
+  
+  /*======= small table ends =========*/
+
+   /*===========
+  styling main notes binding section..
+==============*/
+#tblNotes{
+  border-collapse:separate; 
+  border-spacing:0 8px;
+}
+#tblNotes tr td{
+  padding-left:5px;
+  box-shadow:0px 2px 6px 0px #888888;
+}
+.box-container-for-notes{
+  width: 96%;  
+  min-height: 150px;
+  padding:5px;
+  box-shadow:0px 2px 6px 0px #888888;
+  margin:5px;
+  
+}
+.box-desc{
+  margin: 5px;
+  line-height: 1.7;
+  
+}
+.box-next-line{
+  margin:3px
+}
+.box-notes-details{
+  margin:3px;
+  line-height: 1.8;
+}
+.label-default{
+  background-color:#e4e2e2;  
+  color:black;
+  padding:3px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.hr-style{
+  background-color: #c1c1c1 !important;
+  color: #c1c1c1 !important;
+  border: solid 0.5px #c1c1c1 !important;
+  margin: 0;
+}
+
+#showDate{
+  padding:3px;
+  margin-bottom: 2px;
+}
+
+h4:first-letter {
+  text-transform: capitalize;
+ }
+
+.notes-box{
+  position: absolute;
+  top:70px;
+  left:8.5%;
+  width: 90%;
+}
+.notes-box .notes-details h6 {
+  display: inline;
+  padding-right:8px;
+}
+
+.logoutbutton{
+  background: transparent;
+  border:none;
+  font-size: 14px;
+}
+
+.icon-left{  
+  color:#1a0dab;
+  padding-right:3px;
+  cursor:pointer;
+}
+
+/*==========
+  making the notes binding scetion responsive starts..
+=========*/
+@media only screen and (max-width:1249px){
+  .notes-box{
+    left:10%;
+  }
+}
+
+@media only screen and (max-width:1092px){
+  .notes-box{
+    left:12%;
+    width:90%;
+  }
+}
+
+@media only screen and (max-width:882px){
+  .notes-box{
+    left:13%;
+    width:88%;
+  }
+}
+
+@media only screen and (max-width:779px){
+  .notes-box{
+    left:15%;
+    width:87%;
+  }
+}
+
+@media only screen and (max-width:697px){
+  .notes-box{
+    left:16%;
+    width:85%;
+  }
+}
+
+@media only screen and (max-width:659px){
+  .notes-box{
+    left:17%;
+    width:84%;
+  }
+}
+
+@media only screen and (max-width:618px){
+  .notes-box{
+    left:0;
+    top:78px;
+    width:100%;
+    z-index:-1;
+  }
+}
+
+
+/*==========
+  making the notes binding scetion responsive ends..
+=========*/

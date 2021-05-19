@@ -1,0 +1,508 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*overflow-x: hidden;*/
+  }
+  /*-----coding for navigation bar starts--------*/  
+  
+  .topnav {
+    position:fixed;
+    background-color: #4a245e;
+    width:100%;
+    z-index: 1;  
+  }
+  
+  .topnav #btnLogoutSmallScreen{
+    visibility: hidden;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.5px; 
+    transition: 0.3s;
+  }
+  
+  .topnav .navbar-link:hover:not(.searchBox) {
+    background-color: #d33d1f;
+  }
+  
+  .topnav .icon {
+    display: none;
+  } 
+  
+  .topnav .topnav-right{
+      float: right;
+      background-color: #f26649;
+  }
+  
+  @media screen and (max-width: 1040px) {
+    .topnav .dropdownAccount{
+      position: absolute;
+      visibility: hidden;
+      z-index:-1;
+    }
+    .topnav a:not(.searchBox) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1040px) {
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      transition: 2s;
+      text-align: left;
+    }
+    .topnav #btnLogoutSmallScreen{
+      visibility: visible;
+    }
+  }
+  
+  .dropdownAccount {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdownAccount .dropbtnAccount {
+    font-size: 16px;  
+    width:140px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align:center;
+    cursor: pointer;
+  }
+  
+  .dropbtnAccount:hover{
+    background-color: #d33d1f;
+  }
+  
+  .dropdown-content-Account {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdownAccount .dropdown-content-Account a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content-Account .account-option:hover {
+    background-color: #ddd;
+  }
+  
+  /*-----coding for navigation bar ends--------*/
+  
+  
+  /*------------sidebar starts------------*/
+  .sidebar {
+    top:54px;
+    margin: 0;
+    padding: 0;
+    width: 200px; 
+    background-color: #f26649;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar #userProfile{
+    position: absolute;
+    visibility: hidden;
+    z-index:-1;
+  }
+  .sidebar a {
+    font-size:17px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #d33d1f;
+    color: white;
+  }
+  
+  .openbtn {
+    visibility: hidden;
+    position: fixed;
+    top:50px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #4a245e;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+  }
+  .openbtn:hover{
+      background:#f26649;
+  }
+  .closebtn{
+      visibility: hidden;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /*-----------making the sidebar responsive------------*/
+  
+  @media only screen and (max-width:1040px){
+    .sidebar #userProfile{
+      position: relative;
+      visibility: visible;
+      z-index:1;
+    }
+    .openbtn{
+        visibility: visible;
+        
+    }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #f26649;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 17px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidebar a:hover {
+        color:white;
+  
+      }
+      
+      .sidebar .closebtn {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 15px;
+        margin-left: 50px;
+      }
+      .sidebar .closebtn:hover{
+          color:white;
+      }
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+  }
+  @media screen and (min-width:1040px){
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px; 
+      background-color: #f26649;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+  }
+  
+  .dropbtn {
+  font-size: 16px;
+  border: none;
+  }
+  
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left:50px;
+  }
+  /*=============
+    styling the center box..
+  =================*/
+  .center-box{
+      position: absolute;
+      right:0;
+      top:53px;
+      width:1143px;
+      z-index: -1;
+  }
+  .center-box .row{
+      padding-left:10px;
+      padding-right:10px;
+      padding-top: 5px;
+
+  }
+  .center-box .row .form-control{
+      width:100%;
+  }
+
+  #pending table{
+    background-color: white;
+    overflow: scroll;
+    z-index:-10;
+  }
+
+  /*=======================
+     styling the small notes bind table starts..
+  ==========================*/
+  #tblNotes #tableAllNotes{
+    border-collapse:none; 
+    border-spacing:0;
+    margin-bottom:0;
+  }
+  
+  #tblNotes #tableAllNotes tr td{
+    padding-left:0px;
+    box-shadow:none;
+  }
+  
+  .dropdown-content .closeSmTable{
+    top:0px;
+    right:2px;
+    position: absolute;
+    color: rgb(75, 75, 75);
+    font-size: 28px;
+    font-weight: bold;
+    cursor:pointer;
+  }
+  .dropdown-content .closeSmTable:focus{
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .ddlSmallTable{
+    color:#1A0DAB;
+    cursor: pointer;
+    padding-left: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: 0px;
+    top: 19px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 7px;
+    z-index: 1;
+  }
+  
+  .ddlLinkList{
+    display: block;
+  }
+
+  /*=======================
+     styling the small notes bind table ends..
+  ==========================*/
+
+  /*================
+    making the center-box responsive starts..
+  ====================*/
+   @media only screen and (max-width:1352px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1135px;
+    }
+   }
+   @media only screen and (max-width:1341px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1120px;
+    }
+   }
+   @media only screen and (max-width:1328px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1110px;
+    }
+   }
+   @media only screen and (max-width:1318px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1100px;
+    }
+   }
+   @media only screen and (max-width:1308px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1090px;
+    }
+   }
+   @media only screen and (max-width:1299px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1080px;
+    }
+   }
+   @media only screen and (max-width:1288px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1060px;
+    }
+   }
+   @media only screen and (max-width:1269px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1040px;
+    }
+   }
+   @media only screen and (max-width:1248px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1020px;
+    }
+   }
+   @media only screen and (max-width:1229px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:1000px;
+    }
+   }
+   @media only screen and (max-width:1209px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:990px;
+    }
+   }
+   @media only screen and (max-width:1196px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:980px;
+    }
+   }
+   @media only screen and (max-width:1188px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:970px;
+    }
+   }
+   @media only screen and (max-width:1178px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:950px;
+    }
+   }
+   @media only screen and (max-width:1158px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:930px;
+    }
+   }
+   @media only screen and (max-width:1139px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:900px;
+    }
+   }
+   @media only screen and (max-width:1109px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:880px;
+    }
+   }
+   @media only screen and (max-width:1088px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:850px;
+    }
+   }
+   @media only screen and (max-width:1038px){
+    .center-box{
+      right:0;
+      top:53px;
+      width:810px;
+    }
+   }@media only screen and (max-width:1040px){
+    .center-box{
+      left:0;
+      top:53px;
+      width:950px;
+    }
+   }
+
+   @media only screen and (max-width:534px){
+    .center-box .row .form-control {
+      width:30%;
+    }
+    .center-box .row .btn-row{
+      padding:2px;
+    }
+   }
+  
+
+
+  /*================
+    making the center-box responsive ends..
+  ====================*/
+
+  /*==========
+  styling for bottom navbar
+  ============*/
+  footer .button-row{
+    background-color: white;
+    position: fixed;
+    padding:10px;
+    bottom:0;
+    z-index:1;
+  }

@@ -1,0 +1,108 @@
+.blog-area{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 124px;
+    top: 64px;
+}
+
+.input-group{
+    width:60%;
+}
+
+.input-group #btnSearchBlog{
+    background-color: #d33d1f;
+    color:white;
+}
+
+.blog-area #btnQuestionFilter{
+    margin-left:10px;
+}
+
+.blog-area #btnGroupOfUserAction{
+    margin-top:10px;
+}
+
+.blog-area .btn-group .btn-default{
+    background-color: #d33d1f;
+    color:white;
+}
+
+/*===========
+  styling main notes binding section..
+==============*/
+#tblNotes{
+    border-collapse:separate; 
+    border-spacing:0 8px;
+  }
+  #tblNotes tr td{
+    padding-left:5px;
+    box-shadow:0px 2px 6px 0px #888888;
+  }
+  .box-container-for-notes{
+    width: 92%;  
+    min-height: 150px;
+    padding:5px;
+    box-shadow:0px 2px 6px 0px #888888;
+    margin:5px;
+    
+  }
+
+  .box-container-for-notes .hr-style{
+      margin:0;
+  }
+
+  .box-desc{
+    margin: 5px;
+    line-height: 1.7;
+    
+  }
+  .box-next-line{
+    margin:3px
+  }
+  .box-notes-details{
+    margin:3px;
+    line-height: 1.8;
+  }
+  .label-default{
+    background-color:#e4e2e2;  
+    color:black;
+    padding:3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  
+  #showDate{
+    padding:3px;
+    margin-bottom: 2px;
+  }
+  
+  h4:first-letter {
+    text-transform: capitalize;
+   }
+  
+  .notes-box{
+    position: absolute;
+    top: 65px;
+    left: 7.5%;
+    width: 89%;
+  }
+  .notes-box .notes-details h6 {
+    display: inline;
+    padding-right:8px;
+  }
+  
+  .logoutbutton{
+    background: transparent;
+    border:none;
+    font-size: 14px;
+  }
+  
+  .notes-box #tblNotes .notes-details{
+    padding-bottom: 6px;
+  }
+  .notes-box #tblNotes .icon-left{
+    color:#a5a5a5;
+    padding-right:3px;
+    cursor:pointer;
+  }

@@ -1,0 +1,277 @@
+.center-main{
+  position: absolute;
+  top:60px;
+  left:10%;
+  width:85%;
+  overflow-x: scroll;
+}
+
+/*==============
+  Filter starts
+==================*/
+#filterBox{
+    display: none;
+    border-radius: 12px;
+    position: absolute;
+    width:50%;
+    top:65px;
+    left:23%;
+    padding:8px;
+    background-color: #f9f9f9;
+    z-index:1;
+  }
+  #filterBox select{
+    width:100%;
+  }
+  #filterBox .button-row{
+    width:90%;
+  }
+  
+  /*==============
+    Filter ends
+  ==================*/
+
+    /*======= small table starts ========*/
+  #tblNotes #tableAllNotes{
+    border-collapse:none;
+    border-spacing:0;
+    margin-bottom:0;
+    background-color: #f9f9f9;
+  }
+  
+  #tblNotes #tableAllNotes tr td{
+    padding-left:0px;
+  }
+  
+  .dropdown-content .closeSmTable{
+    top:0px;
+    right:2px;
+    position: absolute;
+    color: rgb(75, 75, 75);
+    font-size: 28px; 
+    font-weight: bold;
+    cursor:pointer;
+  }
+  .dropdown-content .closeSmTable:focus{
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .ddlSmallTable{
+    color:#1A0DAB;
+    cursor: pointer;
+    padding-left: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: 0px;
+    top: 19px;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 7px;
+    z-index: 1;
+  }
+  .ddlLinkList{
+    display: block;
+  }
+  
+  
+  /*======= small table ends =========*/
+  
+  
+    /*===========
+    styling main notes binding section..
+  ==============*/
+  #tblUserAppHistoryBody{
+    border-collapse:separate; 
+    border-spacing:0 8px;
+    border:none;
+  }
+  #tblUserPenHistoryBody{
+    border-collapse:separate; 
+    border-spacing:0 8px;
+    border:none;
+  }
+  
+  #tblUserRejHistoryBody{
+    border-collapse:separate; 
+    border-spacing:0 8px;
+    border:none;
+  }
+
+  .table{
+    width:90%;
+  }
+  .label-default{
+    background-color: #f3f3f3;
+    margin-left:7px; 
+    color:black;
+    padding:3px;
+  }
+  
+  /*.notes-box{
+    position: absolute;
+    top:70px;
+    left:16%;
+  }*/
+  .notes-box .notes-details h6 {
+    display: inline;
+    padding-right:8px;
+    
+  }
+  .notes-box .table .notes-details{
+    padding-bottom: 6px;
+  }
+  .notes-box .table .icon-left{
+    font-size: 20px;
+    color:#a5a5a5;
+    padding-right:10px;
+    cursor:pointer;
+  }
+  .notes-box .table .icon-right{
+    font-size: 20px;
+    padding-right: 10px;
+    color:#a5a5a5;
+    float: right;
+    cursor: pointer;
+  }
+
+  footer .button-row{
+    background-color: white;
+    position: fixed;
+    padding:10px;
+    bottom:0;
+    z-index:1;
+  }
+
+  /*==========
+    making the notes binding section responsive starts..
+  ===========*/
+
+  @media only screen and (max-width:1139px){
+    .center-main{
+      left:12%;
+    }
+    .table{
+      width:90%
+    }
+  }
+
+  @media only screen and (max-width:1027px){
+    .center-main{
+      left:12%;
+    }
+    .table{
+      width:90%
+    }
+  }
+
+  @media only screen and (max-width:991px){
+    .center-main{
+      left:14%;
+    }
+    .table{
+      width:90%
+    }
+  }
+
+  @media only screen and (max-width:921px){
+    .center-main{
+      left:15%;
+    }
+    .table{
+      width:89%
+    }
+  }
+
+  @media only screen and (max-width:879px){
+    .center-main{
+      left:14%;
+    }
+    .table{
+      width:85%
+    }
+  }
+
+  @media only screen and (max-width:856px){
+    .center-main{
+      left:16%;
+    }
+    .table{
+      width:90%
+    }
+  }
+
+  @media only screen and (max-width:742px){
+    .center-main{
+      left:17%;
+    }
+    .table{
+      width:95%;
+      border:none;
+    }
+    #tblUserPenHistoryBody{
+      border:none;
+    }
+  }
+
+  @media only screen and (max-width:617px){
+    .center-main{
+      left:0;
+      width:100%;
+      top:82px;
+      z-index:-1;
+    }
+    .table{
+      width:100%;
+    }
+    #tblUserPenHistoryBody{
+      border:none;
+    }
+  }
+
+  /*========= making approved and rejected responsive.. ==========*/
+  @media only screen and (max-width:440px){
+    #userApprovedNotes #tblUserAppHistoryBody{
+      width:50%;
+    }
+
+    #userApprovedNotes #tblUserAppHistoryBody h4,h5{
+      padding:0;
+      padding-top:5px;
+      padding-bottom:2px;
+      margin:0;
+    }
+  }
+
+  @media only screen and (max-width:420px){
+    #userApprovedNotes #tblUserAppHistoryBody{
+      left:2px;
+      
+    }
+
+    #userApprovedNotes #tblUserAppHistoryBody h4,h5{
+      padding:0;
+      padding-top:5px;
+      padding-bottom:2px;
+      margin:0;
+    }
+  }
+
+
+
+  /*==========
+    making the notes binding section responsive ends..
+  ===========*/
+
+  @media only screen and (max-width:600px){
+    .center-main{
+      padding-bottom: 53px;
+    }
+  }

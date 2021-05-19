@@ -1,0 +1,79 @@
+body{
+    background-color: #e74c3c;
+    overflow: hidden;
+}
+
+.resend-box .data-box{
+    position: absolute;
+    left:39%;
+    top:30%;
+}
+
+.resend-box .data-box h5{
+    font-weight: bold;
+    text-align: left;
+}
+
+.resend-box .data-box #message-box{
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    width: 64%;
+    margin-left: 0%;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.data-box input:not(#btnResendActivation){
+    width:65%;
+    height: 40px;
+    border-radius: 20px
+}
+
+.data-box #btnResendActivation{
+    margin-left: 3px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/*----- making the page responsive ------*/
+
+@media only screen and (max-width:1150px){
+    .data-box input:not(#btnResendActivation) {
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width:966px){
+    .data-box input:not(#btnResendActivation) {
+        width: 97%;
+    }
+
+    .resend-box .data-box {
+        left: 32%;
+    }
+}
+
+@media only screen and (max-width:793px){
+    .col-sm-4{
+        width:41%;
+    }
+}
+
+@media only screen and (max-width:605px){
+    .col-sm-4{
+        width:53%;
+    }
+    .resend-box .data-box {
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .col-sm-4{
+        width:75%;
+    }
+    .resend-box .data-box {
+        left: 5%;
+    }
+}

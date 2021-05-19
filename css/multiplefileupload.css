@@ -1,0 +1,55 @@
+.rmicon{
+	color:red;
+}
+.dicon{
+	color:#339af0;
+}
+#fileList {
+  list-style-type:none;
+  }
+/*.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}*/
+.btn{
+	border-radius:0px;
+}
+.btn-bs-file{
+    position:relative;
+    margin-left:60px;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+}
+.btn-bs-file .uil-paperclip{
+  color:#e74c3c;
+  font-size:17px;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
